@@ -1,1 +1,112 @@
-"Hello World" 
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Bumanerdene's Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta name="keywords" content="React,Portfolio">
+  <link rel="icon" href="#">
+  <!--Stylish links-->
+  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+  <!--Scriptish links-->
+
+  <!--Other frameworks links-->
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab|Roboto:300,400,700" rel="stylesheet">
+</head>
+
+<body>
+  <!--First page: Welcome section-->
+  <section id='welcome-section'>
+    <nav id='navbar' class='nav-bar'>
+      <a id='s1' href='#welcomemain'>ABOUT</a>
+      <a id='s2' href='#projects'>WORKS</a>
+      <a id='s3' href='#contact'>CONTACT</a>
+    </nav>
+    <main id='welcomemain'>
+      <div id='leftside'>
+        <h1>
+        Hi, I am <span id='changeableText' style="color: #ea257e"></span>
+    </h1>
+        <p id='welcometext'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s</p>
+        <a href='#contact'><button id='contactBtn'>Contact me!</button></a>
+      </div>
+      <div id='rightside'></div>
+    </main>
+  </section>
+  <!--Second page: Works on me section-->
+  <section id='projects'>
+    <h2>Works</h2>
+    <div id='line'></div>
+    <section class='gitProject'>
+      <div id='github1' class='project-tile'>
+        <div class='overlay'>
+          <img src='https://i.imgur.com/T20nnuN.png' class='overlayIcon' />
+          <a href='https://github.com/bumanerdene/pomodoro-react' id='project-link'>pomodoro-react</a>
+        </div>
+      </div>
+      <div id='github2' class='project-tile'>
+        <div class='overlay'>
+          <img src='https://i.imgur.com/T20nnuN.png' class='overlayIcon' />
+          <a href='https://github.com/bumanerdene/Calculator' id='project-link'>calculator</a>
+        </div>
+      </div>
+      <div id='github3' class='project-tile'>
+        <div class='overlay'>
+        <img src='https://i.imgur.com/T20nnuN.png' class='overlayIcon' />
+        <a href='https://github.com/bumanerdene/StopWatch' id='project-link'>stopwatch</a>
+      </div>
+    </div>
+    </section>
+    <section class='fccProject'>
+      <div id='fcc1' class='project-tile'>
+        <div class='overlay'>
+        <img src='https://i.imgur.com/nrqAuDt.png' class='overlayIcon' />
+        <a href='https://codepen.io/eeni/full/MBWmeW/' id='project-link'>survey-form</a>
+      </div>
+      </div>
+      <div id='fcc2' class='project-tile'>
+        <div class='overlay'>
+        <img src='https://i.imgur.com/nrqAuDt.png' class='overlayIcon' />
+        <a href='https://codepen.io/eeni/pen/XBbpaR' id='project-link'>technical-documentation</a>
+        </div>
+      </div>
+      <div id='fcc3' class='project-tile'>
+        <div class='overlay'>
+        <img src='https://i.imgur.com/nrqAuDt.png' class='overlayIcon' />
+        <a href='https://codepen.io/eeni/pen/BPyjGJ' id='project-link'>product-landing-page</a>
+        </div>
+      </div>
+    </section>
+    <!--id='profile-link'-->
+  </section>
+  <!--Last page: Contact me section-->
+  <section id='contact'>
+    <h2>Contact me!</h2>
+    <div id='line'></div>
+    <div class='contactDiv'>
+    <div id='github'>
+
+    <a href='https://github.com/bumanerdene' target='_blank' id='profile-link' class='contactText'>  <img src='https://i.imgur.com/BoUmYUs.png' class='contactIcon'/></a>
+  </div>
+  <div id='facebook'>
+
+    <a href='https://www.facebook.com/Eeni.U' class='contactText'>  <img src='https://i.imgur.com/ZW9BniD.png' class='contactIcon'/></a>
+  </div>
+  <div id='twitter'>
+
+    <a href='https://twitter.com/bumanerdene' class='contactText'><img src='https://i.imgur.com/P6t6Bix.png' class='contactIcon'/></a>
+  </div>
+    </div>
+    <a href="bumanerdene0110@gmail.com">bumanerdene0110@gmail.com</a>
+  </section>
+  <!--Footer + Copyright-->
+  <footer id='footer'>
+    <span>&copy; 2018 Buman-Erdene</span>
+  </footer>
+  <script src="https://cdn.jsdelivr.net/npm/typeit@5.10.1/dist/typeit.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script src='mainJs.js'></script>
+</body>
+
+</html>
