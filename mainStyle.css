@@ -14,14 +14,7 @@ h1 {
   margin-bottom: 0;
 }
 
-p {
-  font-size: 1.3em;
-  font-weight: 300;
-  color: #555555;
-  opacity: 0.5;
-  margin-top: 2em;
-  margin-bottom: 2em;
-}
+
 
 #navbar {
   display: flex;
@@ -54,7 +47,7 @@ p {
 
 
 #welcomemain {
-  height: 100vh;
+  height: 90vh;
 }
 
 #leftside {
@@ -64,7 +57,7 @@ p {
 
 #rightside {
   background-image: url("https://images.unsplash.com/photo-1496193574520-069d8f5c945e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9362f8b69ffdd7b7b1e94704e90f3eaf&auto=format&fit=crop&w=1000&q=80");
-  background-size: 85%;
+  background-size: 80%;
   background-repeat: no-repeat;
   position: absolute;
   left: 55em;
@@ -79,6 +72,12 @@ p {
 
 #welcometext {
   width: 45%;
+    font-size: 1.3em;
+  font-weight: 300;
+  color: #555555;
+  opacity: 0.5;
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #contactBtn {
@@ -88,7 +87,7 @@ p {
   font-size: 1em;
   padding: 1em 2em 1em 2em;
   border-radius: 50px;
-  background: linear-gradient(-45deg, #B24592, #F15F79);
+  background: #ea257e;
   transition:box-shadow 0.5s ease;
 }
 #contactBtn:hover{
@@ -97,6 +96,7 @@ p {
 }
 
 #projects {
+  height: 90vh;
   display: grid;
   margin: 0px 5em 0px 5em;
 
@@ -109,14 +109,7 @@ h2{
   color: #ea257e;
   margin: 0;
 }
-#line{
-  margin-top:1em;
-  margin-bottom: 5em;
-  justify-self: center;
-  width: 4em;
-  height: 0.3em;
-  background: linear-gradient(-45deg, #B24592, #F15F79);
-}
+
 .gitProject {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -256,101 +249,61 @@ transition:all 0.3s ease-in-out;
 button:focus{
   outline: none;
 }
-/* Extra small devices (phones, 600px and down) --Small  */
+.img-resume{
+  max-width: 100%;
+}
 
-@media only screen and (max-width: 600px) {
+#facebook {
+    
+}
 
-  body{
-    max-width:600px;
-  }
-    #rightside{
-    display: none;
-  }
-  h1 {
-    font-size: 1.6em;
-  }
 
-  p {
-    font-size: 0.5em;
-    font-weight: 200;
-    margin-top: 1em;
-    margin-bottom: 1em;
-  }
-  #navbar {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    top: 0;
-    position: fixed;
-    height: 3em;
-    width: 100%;
-    margin-left: 1em;
-  }
-  #navbar a {
-    font-size: 0.5em;
-    font-weight: 200;
-    margin: 1em;
-    transition: font-weight 0.5s ease;
-  }
 
-  #welcomemain {
-    height: 50vh;
-  }
-  #leftside {
-    padding-top: 4em;
-    padding-left: 3em;
-  }
-  #contactBtn {
-    border: none;
-    color: #fff;
-    font-weight: 500;
-    font-size: 0.5em;
-    padding: 1em 2em 1em 2em;
-    border-radius: 50px;
-    background: linear-gradient(-45deg, #B24592, #F15F79);
-    transition:box-shadow 0.5s ease;
-  }
-  h2{
-    text-align: center;
-    font-family: 'Roboto Slab', serif;
-    font-weight: 500;
-    font-size: 1.6em;
-    color: #ea257e;
-    margin: 0;
-  }
-  #line{
-    margin-bottom: 2em;
-    justify-self: center;
-    width: 2em;
-    height: 0.3em;
-    background: linear-gradient(-45deg, #B24592, #F15F79);
-  }
-  #projects {
-    margin:0;
+#myImg {
+    width: 300px;
+    padding: 0.3em 5em;
+    grid-area: 1/1/2/4;
+    
+}
 
-  }
-  .gitProject {
-    grid-template-columns: 60%;
-    justify-content: center;
-    margin-bottom: 2em;
-  }
-  .fccProject{
+#aboutme {
+    height: 90vh;
     display: grid;
-    grid-template-columns: 60%;
-    justify-content: center;
-    grid-gap: 2em;
-    margin-bottom: 2em;
-  }
+    grid-template-columns: 30% 60%;
+    grid-gap: 3em;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) --Medium */
-
-@media only screen and (min-width: 600px) {
-  ...
+h3 {
+    color: #FF6D6D;
+    opacity: 0.8;
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up)  --Large*/
+#aboutmeRight {
+    padding: 0.3em 5em;
+    margin: auto;
+}
 
-@media only screen and (min-width: 1200px) {
-  ...
+#aboutmeLeft {
+      margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    text-align: center;
+    grid-row-gap: 3em;
+}
+
+#whoisP {
+    color: #555555;
+}
+
+#whatcanUl {
+    color: #555555;
+}
+
+#whatamUl {
+    color: #555555;
+}
+
+.contactText {
+    text-decoration: none;
+    color: #8eb9ff;
 }

@@ -19,6 +19,8 @@
   <link rel="icon" href="#">
   <!--Stylish links-->
   <link rel="stylesheet" type="text/css" href="mainStyle.css">
+  <link rel="stylesheet" type="text/css" href="smallDevices.css">
+  <link rel="stylesheet" type="text/css" href="MediumDevices.css">
   <!--Scriptish links-->
 
   <!--Other frameworks links-->
@@ -29,25 +31,71 @@
   <!--First page: Welcome section-->
   <section id='welcome-section'>
     <nav id='navbar' class='nav-bar'>
-      <a id='s1' href='#welcomemain'>ABOUT</a>
+      <a id='s1' href='#aboutme'>ABOUT</a>
       <a id='s2' href='#projects'>WORKS</a>
       <a id='s3' href='#contact'>CONTACT</a>
+      <a id="myBtn" href='#' style='color:#ea257e'>RESUME</a>
     </nav>
+    <div id="myModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <img src='resume.png' class='img-resume'>
+      </div>
+    </div>
     <main id='welcomemain'>
       <div id='leftside'>
         <h1>
         Hi, I am <span id='changeableText' style="color: #ea257e"></span>
     </h1>
-        <p id='welcometext'>I am React JS Developer from Mongolia and travelling the world. Currently in Chiang Mai, Thailand. If you are looking for Developer, who is willing to learn more, you came to the right place!</p>
+        <p id='welcometext'>I am React.JS Developer from Mongolia.If you are looking for a Developer, who is willing to learn more and young energetic one, I am really happy to talk with you!</p>
         <a href='#contact'><button id='contactBtn'>CONTACT ME</button></a>
       </div>
       <div id='rightside'></div>
     </main>
   </section>
+  <section id='aboutme'>
+      <div id='aboutmeLeft'>
+           <img src="myImg.jpg" id='myImg'>
+            <div id='github'>
+
+    <a href='https://github.com/bumanerdene' target='_blank' id='profile-link' class='contactText'>Github</a>
+  </div>
+            <div id='twitter'>
+
+    <a href='https://twitter.com/bumanerdene' class='contactText'>Twitter</a>
+  </div>
+            <div id='facebook'>
+
+    <a href='https://www.facebook.com/Eeni.U' class='contactText'>Facebook</a>
+  </div>
+      </div>
+   
+
+      <div id='aboutmeRight'>
+          <h3>Who is Buman-Erdene?</h3>
+          <p id='whoisP'>I am from Mongolia which is located in Asia. I graduated National University Of Mongolia in June, 2018 by Bachelor of Computer Science. 
+</p>
+          <h3>What can I do?</h3>
+          <ul id='whatcanUl'>
+          <li>React.js + Redux</li>
+              <li>CSS + SASS/SCSS</li>
+              <li>MYSQL / MongoDB</li>
+              <li>Git</li>
+              <li>Npm</li>
+              <li>Software Documentation</li>
+              <li>Simple UI design</li>
+          </ul>
+          <h3>What am I doing? </h3>
+          <ul id='whatamUl'>
+          <li>Pomodoro + Todo List based on React.js</li>
+              <li>CSS animation in different type of React button</li>
+             
+          </ul>
+      </div>
+  </section>
   <!--Second page: Works on me section-->
   <section id='projects'>
     <h2>Works</h2>
-    <div id='line'></div>
     <section class='gitProject'>
       <div id='github1' class='project-tile'>
         <div class='overlay'>
