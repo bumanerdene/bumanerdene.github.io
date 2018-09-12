@@ -11,9 +11,12 @@
   h1 {
     font-size: 1.6em;
   }
-
-  p {
-    font-size: 0.5em;
+ 
+    h3{
+        transform: scale(0.8);
+    }
+  p, #whatcanUl, #whatamUl{
+    font-size: 0.6em;
     font-weight: 200;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -26,7 +29,6 @@
     position: fixed;
     height: 3em;
     width: 100%;
-    margin-left: 1em;
   }
   #navbar a {
     font-size: 0.5em;
@@ -34,14 +36,38 @@
     margin: 1em;
     transition: font-weight 0.5s ease;
   }
+#leftside {
+    padding-top: 5em;
+    padding-left: 2em;
+}
 
   #welcomemain {
-    height: 50vh;
+    height: 40vh;
   }
+    #welcometext{
+    width: 75%;
+    font-size: 0.6em;
+    font-weight: 200;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    }
   #leftside {
     padding-top: 4em;
     padding-left: 3em;
   }
+    #aboutme {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    justify-content: center;
+}
+    #aboutmeRight {
+    padding: 0.1em 2em;
+    margin: auto;
+}
+    .aboutIcon{
+    width: 55%;
+}
   #contactBtn {
     border: none;
     color: #fff;
@@ -59,18 +85,34 @@
     font-size: 1.6em;
     color: #ea257e;
     margin: 0;
-  }
-  #line{
-    margin-bottom: 3em;
-    justify-self: center;
-    width: 2em;
-    height: 0.3em;
-    background: linear-gradient(-45deg, #B24592, #F15F79);
+      margin-bottom: 1em;
   }
   #projects {
     margin:0;
-
   }
+    .overlay {
+    background-color: #000;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    transition: .5s ease;
+}
+    .overlayIcon {
+    width: 3em;
+    margin: auto;
+    opacity: 0.75;
+}
+    #project-link {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 0.7em;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.75;
+}
   .gitProject {
     grid-template-columns: 60%;
     justify-content: center;
@@ -95,4 +137,8 @@
 
 @media only screen and (min-width: 1200px) {
   ...
+}
+
+#welcometext {
+    
 }
