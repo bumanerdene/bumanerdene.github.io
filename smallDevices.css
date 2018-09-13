@@ -16,7 +16,7 @@
         transform: scale(0.8);
     }
   p, #whatcanUl, #whatamUl{
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-weight: 200;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -42,11 +42,11 @@
 }
 
   #welcomemain {
-    height: 40vh;
+    height: 50vh;
   }
     #welcometext{
     width: 75%;
-    font-size: 0.6em;
+    font-size: 0.8em;
     font-weight: 200;
     margin-top: 1em;
     margin-bottom: 1em;
@@ -129,9 +129,7 @@
 
 /* Small devices (portrait tablets and large phones, 600px and up) --Medium */
 
-@media only screen and (min-width: 600px) {
-  ...
-}
+
 
 /* Extra large devices (large laptops and desktops, 1200px and up)  --Large*/
 

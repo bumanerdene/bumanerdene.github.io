@@ -51,4 +51,46 @@
     cursor: pointer;
 }
 
-
+@media  (max-width: 1200px) and (min-width: 600px) {
+#rightside {
+    background-image: url("https://images.unsplash.com/photo-1496193574520-069d8f5c945e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9362f8b69ffdd7b7b1e94704e90f3eaf&auto=format&fit=crop&w=1000&q=80");
+    background-size: 80%;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 45em;
+    top: -10em;
+    z-index: -9999;
+    width: 50em;
+    height: 50em;
+    border-radius: 60px;
+    transform: rotate(20deg);
+    box-shadow: 0px 0px 35px #888888;
+    animation: emerge 2s ease;
+}
+        .aboutIcon{
+    width: 35%;
+}
+     .overlay {
+    background-color: #000;
+    display: grid;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    z-index: 0;
+    opacity: 0.6;
+    transition: .5s ease;
+}
+    .overlayIcon {
+    width: 4em;
+    margin: auto;
+    opacity: 0.75;
+}
+    #project-link {
+    padding-top: 1em;
+    font-weight: bold;
+    font-size: 1em;
+    text-decoration: none;
+    color: #fff;
+    opacity: 0.75;
+}
+}
