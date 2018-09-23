@@ -1,73 +1,122 @@
-
 /* Extra small devices (phones, 600px and down) --Small  */
-
 @media only screen and (max-width: 600px) {
-  body{
-    max-width:600px;
+  body {
+    padding: 0;
+    margin: 0;
+    max-width: 600px;
   }
-    #rightside{
+
+  #rightside {
     display: none;
   }
+
   h1 {
     font-size: 1.6em;
+    margin:0;
   }
- 
-    h3{
-        transform: scale(0.8);
-    }
-  p, #whatcanUl, #whatamUl{
+
+  h3 {
+    transform: scale(0.8);
+  }
+
+  p, #whatcanUl, #whatamUl {
     font-size: 0.8em;
     font-weight: 200;
     margin-top: 1em;
     margin-bottom: 1em;
   }
-  #navbar {
-    display: flex;
+  .bar1,
+  .bar2,
+  .bar3 {
+
+    width: 35px;
+    height: 5px;
+    background-color: #ea257e;
+    margin: 6px 0;
+    margin-left: 2em;
+    transition: 0.4s;
+  }
+
+  .change .bar1 {
+            background-color: #fff;
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+
+  }
+  .change{
+    background-color: #ea257e;
+    padding-top: 1em;
+  }
+  .change .bar2 {
+    opacity: 0;
+  }
+  .change .bar3 {
+        background-color: #fff;
+    -webkit-transform: rotate(45deg) translate(-8px, -8px);
+    transform: rotate(45deg) translate(-8px, -8px);
+  }
+  #navbar{
+    display: none;
+  }
+.change  #navbar {
+    background-color: #ea257e;
+    width: 100%;
     justify-content: flex-start;
     align-items: center;
-    top: 0;
-    position: fixed;
-    height: 3em;
+    position: relative;
+    top: auto;
+    display: grid;
+    height: auto;
     width: 100%;
-  }
-  #navbar a {
-    font-size: 0.5em;
-    font-weight: 200;
-    margin: 1em;
-    transition: font-weight 0.5s ease;
-  }
-#leftside {
-    padding-top: 5em;
     padding-left: 2em;
-}
+    z-index: auto;
+    transition: background-color 0.4s ease;
+  }
+
+  #navbar a {
+    font-size: 0.8em;
+    font-weight: 200;
+    color: #fff;
+  }
+  #myBtn{
+    color: white;
+    opacity: 0.6;
+  }
 
   #welcomemain {
-    height: 50vh;
+    position: relative;
+    height: auto;
   }
-    #welcometext{
+
+  #welcometext {
     width: 75%;
     font-size: 0.8em;
     font-weight: 200;
     margin-top: 1em;
     margin-bottom: 1em;
-    }
+  }
+
   #leftside {
-    padding-top: 4em;
+    padding-top: 1em;
     padding-left: 3em;
   }
-    #aboutme {
+
+  #aboutme {
     width: 100%;
     margin: auto;
     display: grid;
     justify-content: center;
-}
-    #aboutmeRight {
+  }
+
+  #aboutmeRight {
     padding: 0.1em 2em;
     margin: auto;
-}
-    .aboutIcon{
+  }
+
+  .aboutIcon {
     width: 55%;
-}
+  }
+
   #contactBtn {
     border: none;
     color: #fff;
@@ -76,21 +125,25 @@
     padding: 1em 2em 1em 2em;
     border-radius: 50px;
     background: linear-gradient(-45deg, #B24592, #F15F79);
-    transition:box-shadow 0.5s ease;
+    transition: box-shadow 0.5s ease;
+    margin-top: 1em;
   }
-  h2{
+
+  h2 {
     text-align: center;
     font-family: 'Roboto Slab', serif;
     font-weight: 500;
     font-size: 1.6em;
     color: #ea257e;
     margin: 0;
-      margin-bottom: 1em;
+    margin-bottom: 1em;
   }
+
   #projects {
-    margin:0;
+    margin: 0;
   }
-    .overlay {
+
+  .overlay {
     background-color: #000;
     display: grid;
     justify-content: center;
@@ -99,44 +152,34 @@
     z-index: 0;
     opacity: 0.6;
     transition: .5s ease;
-}
-    .overlayIcon {
+  }
+
+  .overlayIcon {
     width: 3em;
     margin: auto;
     opacity: 0.75;
-}
-    #project-link {
+  }
+
+  #project-link {
     padding-top: 1em;
     font-weight: bold;
     font-size: 0.7em;
     text-decoration: none;
     color: #fff;
     opacity: 0.75;
-}
+  }
+
   .gitProject {
     grid-template-columns: 60%;
     justify-content: center;
     margin-bottom: 2em;
   }
-  .fccProject{
+
+  .fccProject {
     display: grid;
     grid-template-columns: 60%;
     justify-content: center;
     grid-gap: 2em;
     margin-bottom: 2em;
   }
-}
-
-/* Small devices (portrait tablets and large phones, 600px and up) --Medium */
-
-
-
-/* Extra large devices (large laptops and desktops, 1200px and up)  --Large*/
-
-@media only screen and (min-width: 1200px) {
-  ...
-}
-
-#welcometext {
-    
 }

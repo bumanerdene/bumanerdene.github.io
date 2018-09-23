@@ -1,58 +1,5 @@
-/* The Modal (background) */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
-    animation: emergeModal 1s ease;
-}
-@keyframes emergeModal{
-    0%{
-        opacity: 0.3;
-    }
-    50%{
-        opacity: 0.5;
-        transform: scale(0.9);
-    }
-    100%{
-        opacity: 1;
-        transform: scale(1);
-    }
-} 
-
-/* Modal Content/Box */
-.modal-content {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-/* The Close Button */
-.close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-@media  (max-width: 1200px) and (min-width: 600px) {
-#rightside {
+@media (max-width: 1200px) and (min-width: 600px) {
+  #rightside {
     background-image: url("https://images.unsplash.com/photo-1496193574520-069d8f5c945e?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9362f8b69ffdd7b7b1e94704e90f3eaf&auto=format&fit=crop&w=1000&q=80");
     background-size: 80%;
     background-repeat: no-repeat;
@@ -66,11 +13,13 @@
     transform: rotate(20deg);
     box-shadow: 0px 0px 35px #888888;
     animation: emerge 2s ease;
-}
-        .aboutIcon{
+  }
+
+  .aboutIcon {
     width: 35%;
-}
-     .overlay {
+  }
+
+  .overlay {
     background-color: #000;
     display: grid;
     justify-content: center;
@@ -79,18 +28,20 @@
     z-index: 0;
     opacity: 0.6;
     transition: .5s ease;
-}
-    .overlayIcon {
+  }
+
+  .overlayIcon {
     width: 4em;
     margin: auto;
     opacity: 0.75;
-}
-    #project-link {
+  }
+
+  #project-link {
     padding-top: 1em;
     font-weight: bold;
     font-size: 1em;
     text-decoration: none;
     color: #fff;
     opacity: 0.75;
-}
+  }
 }

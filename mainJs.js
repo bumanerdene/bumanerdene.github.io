@@ -4,9 +4,14 @@ new TypeIt('#changeableText', {
     breakLines: false,
     autoStart: true
 });
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {
+if(documnet.getElementById('contId').classList.contains('change')){}
+else{
+  scrollFunction()}
 
-function scrollFunction() {
+};
+
+function scrollFunction(val) {
     if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         document.getElementById("navbar").style.backgroundColor = "white";
         document.getElementById("navbar").style.boxShadow = "0px 2px 20px #bbb";
@@ -40,4 +45,9 @@ window.onclick = function(event) {
     if (event.target == modal) {
         modal.style.display = "none";
     }
+}
+
+
+function myFunction(x) {
+  x.classList.toggle("change");
 }
